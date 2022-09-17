@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/466d5db8db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header center">
+        <div class="header__left">
+            <a href="index.html" class="logo">
+                <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="logo__span">
+                D</span>
+            </a>
+            <form class="header__form" action="">
+                <details class="header__browses">
+                    <summary class="header__browses_but">Browse</summary> 
+                    <div class="header__browses_dropHead">
+                        <h3 class="dropMenu__h3">Women</h3>
+                        <ul class="dropMenu__ul">
+                            <li><a href="#" class="dropMenu__link">Dresses</a></li> 
+                            <li><a href="#" class="dropMenu__link">Tops</a></li> 
+                            <li><a href="#" class="dropMenu__link">Sweaters/Knits</a></li>                   
+                            <li><a href="#" class="dropMenu__link">Jackets/Coats</a></li>
+                            <li><a href="#" class="dropMenu__link">Blazers</a></li>
+                            <li><a href="#" class="dropMenu__link">Denim</a></li>
+                            <li><a href="#" class="dropMenu__link">Leggings/Pants</a></li> 
+                            <li><a href="#" class="dropMenu__link">Skirts/Shorts</a></li>
+                            <li><a href="#" class="dropMenu__link">Accessories</a></li>            
+                        </ul>
+                        <h3 class="dropMenu__h3 header__browses_dropHead_h3">Men</h3>
+                        <ul class="dropMenu__ul">
+                            <li><a href="#" class="dropMenu__link">Tees/Tank tops</a></li>                  
+                            <li><a href="#" class="dropMenu__link">Shirts/Polos</a></li>
+                            <li><a href="#" class="dropMenu__link">Sweaters</a></li>
+                            <li><a href="#" class="dropMenu__link">Sweatshirts/Hoodies</a></li>
+                            <li><a href="#" class="dropMenu__link">Blazers</a></li> 
+                            <li><a href="#" class="dropMenu__link">Jackets/vests</a></li>            
+                        </ul>
+                    </div>
+                </details>
+                <input class="header__input" placeholder="Search for item..." type="text">
+                <button class="header__button"><i class="fas fa-search header__form_buttonSearch"></i></button>
+            </form>
+        </div>
+        <div class="header__right">
+            <details class="header__carts">
+                <summary class="header__cart"><img src="img/cart.png" alt="cart"></summary>
+                <div class="dropCart">
+                    <div class="dropCart__men">
+                        <img src="./img/dropMen.png" alt="dropMen">
+                        <div class="dropCart__info">
+                            <h3 class="dropCart__h3">Rebox Zane</h3>
+                            <img class="dropCart__img" src="./img/star.png" alt="star">
+                            <p class="dropCart__p">1 x $250</p>
+                        </div>
+                        <i class="fas fa-times-circle shop__product_details_i "></i>
+                    </div>
+                    <div class="dropCart__men">
+                        <img src="./img/dropWomen.png" alt="dropWomen">
+                        <div class="dropCart__info">
+                            <h3 class="dropCart__h3">Rebox Zane</h3>
+                            <img class="dropCart__img" src="./img/star.png" alt="star">
+                            <p class="dropCart__p">1 x $250</p>
+                        </div>
+                        <i class="fas fa-times-circle shop__product_details_i"></i>
+                    </div>
+                    <div class="dropCart__price">
+                        <p>TOTAL</p>
+                        <p>$500.00</p>
+                    </div>
+                    <a href="checkout.html"><button class="dropCart__button">CHECKOUT</button></a>
+                    <a href="shoppingCart.html"><button class="dropCart__button dropCart__button_shop">GO TO CART</button></a>
+                </div>
+            </details>
+            <a href="checkout.html" class="header__right_button">My Account <i class="fas fa-caret-down header__right_buttonFas"></i></a>
+        </div>
+    </header>
+    <nav class="nav center">
+        <ul class="nav__menu">
+            <li class="nav__menu_list"><a href="index.html" class="nav__menu_link">Home</a></li>
+            <li class="nav__menu_list"><a href="product.html" class="nav__menu_link">Men</a></li>
+            <li class="nav__menu_list"><a href="singlePage.html" class="nav__menu_link">Women</a></li>
+            <li class="nav__menu_list"><a href="shoppingCart.html" class="nav__menu_link">Accoseriese</a></li>
+            <li class="nav__menu_list"><a href="#" class="nav__menu_link">Kids</a></li>
+            <li class="nav__menu_list"><a href="#" class="nav__menu_link">Featured</a></li>
+            <li class="nav__menu_list"><a href="#" class="nav__menu_link">Hot Deals</a></li>
+        </ul>
+    </nav>
+    <div class="newArrivals center">
+        <div class="newArrivals__main">NEW ARRIVALS</div>
+        <nav>
+            <ul class="newArrivals__details">
+                <li class="newArrivals__details_li"><a href="index.html" class="newArrivals__details_a">HOME </a></li>
+                <li class="newArrivals__details_li"><a href="product.html" class="newArrivals__details_a">MEN </a></li>
+                <li class="newArrivals__details_li"><a href="#" class="newArrivals__details_span newArrivals__details_a">NEW ARRIVALS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="checkout center">
+        <details class="checkout__details" open>
+            <summary class="checkout__details_summary">01. SHIPPING ADDRESS</summary>
+            <div class="checkout__info">
+                <div class="checkout__check">
+                    <h3 class="checkout__h3">Check as a guest or register</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <label class="checkout__labels checkout__label">
+                        <input type="radio" name="time" value="check" class="checkout__labels__input">
+                        <span class="checkout__labels_span">CHECKOUT AS GUEST</span>
+                    </label> 
+                    <label class="checkout__label">
+                        <input type="radio" name="time" value="register" class="checkout__labels__input" checked>
+                        <span class="checkout__labels_span">REGISTER</span>
+                    </label>
+                    <h3 class="checkout__h3 checkout__h3_register">register and save time!</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <p class="checkout__p checkout__p_register"><i class="fas fa-angle-double-right"></i>
+                        <span class="checkout__p_span">Fast and easy checkout</span></p>
+                    <p class="checkout__p"><i class="fas fa-angle-double-right"></i>
+                        <span class="checkout__p_span">Easy access to your order history and status</span></p>
+                    <button class="checkout__button">CONTINUE</button>
+                </div>
+                <div class="checkout__all">
+                    <h3 class="checkout__h3">Already registered?</h3>
+                    <p class="checkout__p checkout__p_bottom ">Please log in below</p>
+                    <label class="checkout__pass" for="userAddress">EMAIL ADDRESS</label>
+                    <input type="email" name="userAddress" required="required" class="checkout__pass_input">
+                    <label class="checkout__pass" for="username">PASSWORD</label>
+                    <input type="text" name="username" required="required" class="checkout__pass_input">
+                    <p class="checkout__pass_fields">* Required Fields</p>
+                    <button class="checkout__button checkout__button_all">LOG IN</button>
+                </div>
+            </div>
+        </details>
+        <details class="checkout__details">
+            <summary class="checkout__details_summary">02. BILLING INFORMATION</summary>
+            <div class="checkout__info">
+                <div class="checkout__check">
+                    <h3 class="checkout__h3">Check as a guest or register</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <label class="checkout__labels checkout__label"><input type="radio" name="time" value="" class="checkout__labels__input"><span class="checkout__labels_span">CHECKOUT AS GUEST</span></label> 
+                    <label class="checkout__label"><input type="radio" name="time" value="" class="checkout__labels__input"><span class="checkout__labels_span">REGISTER</span></label>
+                    <h3 class="checkout__h3 checkout__h3_register">register and save time!</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <p class="checkout__p checkout__p_register"><i class="fas fa-angle-double-right"></i><span class="checkout__p_span">Fast and easy checkout</span></p>
+                    <p class="checkout__p"><i class="fas fa-angle-double-right"></i><span class="checkout__p_span">Easy access to your order history and status</span></p>
+                    <button class="checkout__button">CONTINUE</button>
+                </div>
+                <div class="checkout__all">
+                    <h3 class="checkout__h3">Already registered?</h3>
+                    <p class="checkout__p checkout__p_bottom ">Please log in below</p>
+                    <label class="checkout__pass" for="userAddress">EMAIL ADDRESS</label>
+                    <input type="email" name="userAddress" required="required" class="checkout__pass_input">
+                    <label class="checkout__pass" for="username">PASSWORD</label>
+                    <input type="text" name="username" required="required" class="checkout__pass_input">
+                    <p class="checkout__pass_fields">* Required Fields</p>
+                    <button class="checkout__button checkout__button_all">LOG IN</button>
+                </div>
+            </div>
+        </details>
+        <details class="checkout__details">
+            <summary class="checkout__details_summary">03. SHIPPING INFORMATION</summary>
+            <div class="checkout__info">
+                <div class="checkout__check">
+                    <h3 class="checkout__h3">Check as a guest or register</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <label class="checkout__labels checkout__label"><input type="radio" name="time" value="" class="checkout__labels__input"><span class="checkout__labels_span">CHECKOUT AS GUEST</span></label> 
+                    <label class="checkout__label"><input type="radio" name="time" value="" class="checkout__labels__input"><span class="checkout__labels_span">REGISTER</span></label>
+                    <h3 class="checkout__h3 checkout__h3_register">register and save time!</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <p class="checkout__p checkout__p_register"><i class="fas fa-angle-double-right"></i><span class="checkout__p_span">Fast and easy checkout</span></p>
+                    <p class="checkout__p"><i class="fas fa-angle-double-right"></i><span class="checkout__p_span">Easy access to your order history and status</span></p>
+                    <button class="checkout__button">CONTINUE</button>
+                </div>
+                <div class="checkout__all">
+                    <h3 class="checkout__h3">Already registered?</h3>
+                    <p class="checkout__p checkout__p_bottom ">Please log in below</p>
+                    <label class="checkout__pass" for="userAddress">EMAIL ADDRESS</label>
+                    <input type="email" name="userAddress" required="required" class="checkout__pass_input">
+                    <label class="checkout__pass" for="username">PASSWORD</label>
+                    <input type="text" name="username" required="required" class="checkout__pass_input">
+                    <p class="checkout__pass_fields">* Required Fields</p>
+                    <button class="checkout__button checkout__button_all">LOG IN</button>
+                </div>
+            </div>
+        </details>
+        <details class="checkout__details">
+            <summary class="checkout__details_summary">04. SHIPPING METHOD</summary>
+            <div class="checkout__info">
+                <div class="checkout__check">
+                    <h3 class="checkout__h3">Check as a guest or register</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <label class="checkout__labels checkout__label"><input type="radio" name="time" value="" class="checkout__labels__input"><span class="checkout__labels_span">CHECKOUT AS GUEST</span></label> 
+                    <label class="checkout__label"><input type="radio" name="time" value="" class="checkout__labels__input"><span class="checkout__labels_span">REGISTER</span></label>
+                    <h3 class="checkout__h3 checkout__h3_register">register and save time!</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <p class="checkout__p checkout__p_register"><i class="fas fa-angle-double-right"></i><span class="checkout__p_span">Fast and easy checkout</span></p>
+                    <p class="checkout__p"><i class="fas fa-angle-double-right"></i><span class="checkout__p_span">Easy access to your order history and status</span></p>
+                    <button class="checkout__button">CONTINUE</button>
+                </div>
+                <div class="checkout__all">
+                    <h3 class="checkout__h3">Already registered?</h3>
+                    <p class="checkout__p checkout__p_bottom ">Please log in below</p>
+                    <label class="checkout__pass" for="userAddress">EMAIL ADDRESS</label>
+                    <input type="email" name="userAddress" required="required" class="checkout__pass_input">
+                    <label class="checkout__pass" for="username">PASSWORD</label>
+                    <input type="text" name="username" required="required" class="checkout__pass_input">
+                    <p class="checkout__pass_fields">* Required Fields</p>
+                    <button class="checkout__button checkout__button_all">LOG IN</button>
+                </div>
+            </div>
+        </details>
+        <details class="checkout__details">
+            <summary class="checkout__details_summary">05. PAYMENT METHOD</summary>
+            <div class="checkout__info">
+                <div class="checkout__check">
+                    <h3 class="checkout__h3">Check as a guest or register</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <label class="checkout__labels checkout__label"><input type="radio" name="time" value="" class="checkout__labels__input"><span class="checkout__labels_span">CHECKOUT AS GUEST</span></label> 
+                    <label class="checkout__label"><input type="radio" name="time" value="" class="checkout__labels__input"><span class="checkout__labels_span">REGISTER</span></label>
+                    <h3 class="checkout__h3 checkout__h3_register">register and save time!</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <p class="checkout__p checkout__p_register"><i class="fas fa-angle-double-right"></i><span class="checkout__p_span">Fast and easy checkout</span></p>
+                    <p class="checkout__p"><i class="fas fa-angle-double-right"></i><span class="checkout__p_span">Easy access to your order history and status</span></p>
+                    <button class="checkout__button">CONTINUE</button>
+                </div>
+                <div class="checkout__all">
+                    <h3 class="checkout__h3">Already registered?</h3>
+                    <p class="checkout__p checkout__p_bottom ">Please log in below</p>
+                    <label class="checkout__pass" for="userAddress">EMAIL ADDRESS</label>
+                    <input type="email" name="userAddress" required="required" class="checkout__pass_input">
+                    <label class="checkout__pass" for="username">PASSWORD</label>
+                    <input type="text" name="username" required="required" class="checkout__pass_input">
+                    <p class="checkout__pass_fields">* Required Fields</p>
+                    <button class="checkout__button checkout__button_all">LOG IN</button>
+                </div>
+            </div>
+        </details>
+        <details class="checkout__details">
+            <summary class="checkout__details_summary">06. ORDER REVIEW</summary>
+            <div class="checkout__info">
+                <div class="checkout__check">
+                    <h3 class="checkout__h3">Check as a guest or register</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <label class="checkout__labels checkout__label"><input type="radio" name="time" value="" class="checkout__labels__input"><span class="checkout__labels_span">CHECKOUT AS GUEST</span></label> 
+                    <label class="checkout__label"><input type="radio" name="time" value="" class="checkout__labels__input"><span class="checkout__labels_span">REGISTER</span></label>
+                    <h3 class="checkout__h3 checkout__h3_register">register and save time!</h3>
+                    <p class="checkout__p">Register with us for future convenience</p>
+                    <p class="checkout__p checkout__p_register"><i class="fas fa-angle-double-right"></i><span class="checkout__p_span">Fast and easy checkout</span></p>
+                    <p class="checkout__p"><i class="fas fa-angle-double-right"></i><span class="checkout__p_span">Easy access to your order history and status</span></p>
+                    <button class="checkout__button">CONTINUE</button>
+                </div>
+                <div class="checkout__all">
+                    <h3 class="checkout__h3">Already registered?</h3>
+                    <p class="checkout__p checkout__p_bottom ">Please log in below</p>
+                    <label class="checkout__pass" for="userAddress">EMAIL ADDRESS</label>
+                    <input type="email" name="userAddress" required="required" class="checkout__pass_input">
+                    <label class="checkout__pass" for="username">PASSWORD</label>
+                    <input type="text" name="username" required="required" class="checkout__pass_input">
+                    <p class="checkout__pass_fields">* Required Fields</p>
+                    <button class="checkout__button checkout__button_all">LOG IN</button>
+                </div>
+            </div>
+        </details>
+    </div>
+    <div class="subscribe center">
+        <div class="subscribe__content">
+            <div class="subscribe__content_main">
+            <img src="./img/reviewPerson.png" alt="reviewPerson">
+            <h4 class="subscribe__content_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</h4>
+            </div>
+            <div class="subscribe__content_details">
+            <h3 class="subscribe__bin">Bin Burhan</h3>
+            <p class="subscribe__dhaka">Dhaka, Bd</p>
+            <div class="subscribe__lines">
+                <div class="subscribe__line"></div>
+                <div class="subscribe__line"></div>
+                <div class="subscribe__line"></div>
+            </div>
+            </div>
+        </div>
+        <div class="subscribe__content">
+            <div class="subscribe__entry">
+            <h1 class="subscribe__entry_main">SUBSCRIBE</h1>
+            <h3 class="subscribe__entry_details">FOR OUR NEWLETTER AND PROMOTION</h3>
+            <form action="" class="subscribe__entry_form">
+                <input placeholder="Enter Your Email" type="email" class="subscribe__entry_input">
+                <button class="subscribe__entry_button">Subscribe</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="brandNav center">
+        <div class="brandNav__main">
+            <a href="index.html" class="logo">
+                <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="logo__span">
+                D</span>
+            </a>   
+            <p class="brandNav__text brandNav__p">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+            <p class="brandNav__text"> Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+        </div>
+        <nav class="navFooter">
+            <div class="navFooter__column">
+                <h2 class="navFooter__column_info">COMPANY</h2>
+                <a href="" class="navFooter__column_a">Home</a>
+                <a href="" class="navFooter__column_a">Shop</a>
+                <a href="" class="navFooter__column_a">About</a>
+                <a href="" class="navFooter__column_a">How It Works</a>
+                <a href="" class="navFooter__column_a">Contact</a>
+            </div>
+            <div class="navFooter__column">  
+                <h2 class="navFooter__column_info">INFORMATION</h2>
+                <a href="" class="navFooter__column_a">Tearms & Condition</a>
+                <a href="" class="navFooter__column_a">Privacy Policy</a>
+                <a href="" class="navFooter__column_a">How to Buy</a>
+                <a href="" class="navFooter__column_a">How to Sell </a>
+                <a href="" class="navFooter__column_a">Promotion</a>
+            </div>
+            <div class="navFooter__column">
+                <h2 class="navFooter__column_info">SHOP CATEGORY</h2>
+                <a href="" class="navFooter__column_a">Men</a>
+                <a href="" class="navFooter__column_a">Women</a>
+                <a href="" class="navFooter__column_a">Child</a>
+                <a href="" class="navFooter__column_a">Apparel</a>
+                <a href="" class="navFooter__column_a">Brows All</a>
+            </div>
+        </nav>
+    </div>
+    <footer class="footer center">
+        <div class="footer__rights">
+           <p>© 2021 Brand All Rights Reserved.</p>
+        </div>
+        <div class="footer__icon">
+            <a href="" class="footer__icon_a"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="footer__icon_a"><i class="fab fa-twitter"></i></a>
+            <a href="" class="footer__icon_a"><i class="fab fa-linkedin-in"></i></a>
+            <a href="" class="footer__icon_a"><i class="fab fa-pinterest-p"></i></a>
+            <a href="" class="footer__icon_a"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
